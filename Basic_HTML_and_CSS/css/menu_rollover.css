@@ -53,10 +53,10 @@ body {
 }
 
 .submenu {
-    padding: 0;
+    padding: 12px 2px;
     left: 0;
     position: absolute;
-    top: 43.5px;
+    /*top: 43.5px;*/
     width: 125.5px;
     opacity: 0;
     /* While not being hovered, drop down-menu hides
