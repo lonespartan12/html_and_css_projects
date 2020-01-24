@@ -1,0 +1,26 @@
+.navbar {
+    overflow: hidden;
+    background-color: khaki;    
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: salmon;
+    text-align: center;
+    text-decoration: black;
+    padding: 16px 14px;
+}
+
+.navbar a:hover {
+    background: peru;
+    color: rgb(0,51,204);
+}
+
+.main {
+    padding: 10px;
+    margin-top:2rem;
+}

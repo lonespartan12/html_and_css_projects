@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+.column {
+    float: left;
+    padding: 10px;
+    height: 500px;
+    width: 300px;
+}
+
+.A {
+    background-color: plum;
+}
+
+.B {
+    background-color: royalblue;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.A p {
+    color: rgb(0, 128, 49);
+}
+
+.A h3 {
+    color: orangered;
+}
+
+.B p {
+    color: salmon;
+}
+
+.B h3 {
+    color: yellow;
+}

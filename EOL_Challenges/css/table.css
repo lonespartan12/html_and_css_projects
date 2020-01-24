@@ -1,0 +1,15 @@
+table {
+    border: 2px solid blue;
+}
+
+th {
+    border: 2px solid black;
+    text-align: left;
+    padding: 2px;
+    background-color: rgb(97, 202, 10);
+}
+
+td {
+    border: 2px solid red;
+    padding: 5px;
+}
