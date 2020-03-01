@@ -24,10 +24,51 @@
 		<!--Image Gallery-->
 		<section>
 			<div id="gallery">
-				<div>
-					<img src="./images/PPB.jpg" alt = "hunting for bamboo">
-					<img src="./images/dogtilt.jpg" alt = "I smell food">
+				<div class="row">
+					<div class="column">
+						<img src="./images/PPB.jpg" alt = "hunting for bamboo" style="width:75%" 
+						onclick="openModal(); currentSlide(1)"class="hover-shadow cursor">
+					</div>
+					<div class="column">
+						<img src="./images/dogtilt.jpg" alt = "I smell food" style="width:75%" 
+						onclick="openModal(); currentSlide(2)" class="hover-shadow cursor">
+					</div>
 				</div>
+
+				<!--Modal/Lightbox-->
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()"> &times;</spa>
+					<div class="modal-content">
+
+						<div class="mySlides">
+							<div class="numbertext">1/2</div>
+							<img src="./images/PPB.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">2/2</div>
+							<img src="./images/dogtilt.jpg" style="width:100%">
+						</div>
+
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+						<div class="caption-container">
+							<p id="caption"></p>
+						</div>
+
+						<div class="column">
+							<img class="cursor" src="./images/PPB.jpg" style="width:100%" onclick="currentSlide(1)"
+							alt="Hunting for bamboo">
+						</div>
+
+						<div class="column">
+							<img class="cursor" src="./images/dogtilt.jpg" style="width:100%" onclick="currentSlide(1)"
+							alt="I smell food">
+						</div>
+					</div>
+				</div>
+
 				<nav>
 					<p><a href="#home">Go to home</a></p>
 					<p><a href="#video">Go to video</a></p>
@@ -104,5 +145,6 @@
 				</details>
 			</div>
 		</footer>
+		<script src="JS/one_page_website.js"></script>
 	</body>
 </html>
